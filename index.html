@@ -1,57 +1,99 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>shiro</title>
-    <link rel="stylesheet" href="./css/destyle.css">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-   <!-- header -->
-   <header class="header">
-    <div class="header__inner inner">
+    <link rel="stylesheet" href="./css/destyle.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="header__inner inner">
         <!-- logo -->
         <div class="header__logo-wrapper">
-            <img src="./img/logo-sm.png" alt="shiro" class="header__logo">
-        </div><!-- /.header__logo-wrapper -->
+          <img src="./img/logo-sm.png" alt="shiro" class="header__logo" />
+        </div>
+        <!-- /.header__logo-wrapper -->
 
         <!-- hamberger -->
-        <div class="hamberger" >          
-            <div class="hamberger__line-wrapper">
-                <span class="hamberger__line"></span>
-                <span class="hamberger__line"></span>
-                <span class="hamberger__line"></span>
-            </div>
+        <div class="hamberger">
+          <div class="hamberger__line-wrapper">
+            <span class="hamberger__line"></span>
+            <span class="hamberger__line"></span>
+            <span class="hamberger__line"></span>
+          </div>
         </div>
 
         <nav class="hamberger-menu">
-            <ul class="hamberger-menu__list">
-                <li class="hamberger-menu__item"><a href="#concept" class=" hamberger-menu__link">Concept</a><!-- /. --></li><!-- /.header__item -->
-                <li class="hamberger-menu__item"><a href="#works" class=" hamberger-menu__link">Works</a></li><!-- /.header__item -->
-                <li class="hamberger-menu__item"><a href="#florist" class=" hamberger-menu__link">Florist</a></li><!-- /.header__item -->
-                <li class="hamberger-menu__item"><a href="#shop" class=" hamberger-menu__link">Shop information</a></li><!-- /.header__item -->
-                <li class="hamberger-menu__item"><a href="#contact" class=" hamberger-menu__link">Contact</a></li><!-- /.header__item -->
-            </ul><!-- /.header__list -->
+          <ul class="hamberger-menu__list">
+            <li class="hamberger-menu__item">
+              <a href="#concept" class="hamberger-menu__link">Concept</a
+              ><!-- /. -->
+            </li>
+            <!-- /.header__item -->
+            <li class="hamberger-menu__item">
+              <a href="#works" class="hamberger-menu__link">Works</a>
+            </li>
+            <!-- /.header__item -->
+            <li class="hamberger-menu__item">
+              <a href="#florist" class="hamberger-menu__link">Florist</a>
+            </li>
+            <!-- /.header__item -->
+            <li class="hamberger-menu__item">
+              <a href="#shop" class="hamberger-menu__link">Shop information</a>
+            </li>
+            <!-- /.header__item -->
+            <li class="hamberger-menu__item">
+              <a href="#contact" class="hamberger-menu__link">Contact</a>
+            </li>
+            <!-- /.header__item -->
+          </ul>
+          <!-- /.header__list -->
         </nav>
-    </div><!-- /.header__inner -->
-</header><!-- /.header -->
+      </div>
+      <!-- /.header__inner -->
+    </header>
+    <!-- /.header -->
 
-
-
-<div class="top">
-    <div class="top__overlay"></div><!-- /.top__overlay -->
-    <div class="top__contents">
+    <div class="top">
+      <div class="top__overlay"></div>
+      <!-- /.top__overlay -->
+      <div class="top__contents">
         <div class="top__title-wrapper">
-            <img src="./img/logo-bg.png" alt="shiro" class="top__title">
-        </div><!-- /.top__title-wrapper -->
-        <p class="top__desc">- White flower shop -</p><!-- /.top__desc -->
-    </div><!-- /.top__contents -->
-</div><!-- /.top -->
+          <img src="./img/logo-bg.png" alt="shiro" class="top__title" />
+        </div>
+        <!-- /.top__title-wrapper -->
+        <p class="top__desc">- White flower shop -</p>
+        <!-- /.top__desc -->
+      </div>
+      <!-- /.top__contents -->
+    </div>
+    <!-- /.top -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="./js/script.js"></script>
+    <section class="concept section" id="concept">
+      <div class="concept__inner">
+        <div class="section__title">Concept</div>
+        <!-- /.section__title -->
+        <p class="section__desc">
+          私たちShiroは、白いお花だけを取り扱うフラワーショップです。<br />
+          色とりどりの花束も素敵だけれど、洗練された「白」の美しさを感じてほしい。<br>
+          「白」に対する愛から生まれた静寂な時間が流れる店へ、ぜひお越しください。
+        </p>
+        <!-- /.section__desc -->
+        <div class="concept__img-wrapper">
+          <img src="./img/concept.png" alt="コンセプト" class="concept__img">
+        </div><!-- /.concept__img-wrapper -->
+      </div>
+      <!-- /.section__inner inner -->
+    </section>
+    <!-- /#concept.concept section -->
 
-</body>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
