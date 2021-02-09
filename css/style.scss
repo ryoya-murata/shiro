@@ -12,7 +12,7 @@ html{
 }
 
 body{
-    font-family: 'Poppins',  'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,sans-serif;
+    font-family: 'Poppins',  'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','小塚ゴシック Pro','Kozuka Gothic Pro','メイリオ', Meiryo,sans-serif;
     color:$font-color;
     width: 100%;
     height: 100%;
@@ -398,4 +398,42 @@ $layer: (
 body.fixed{
     width: 100%;
     overflow-y: hidden;
+}
+
+// =======================
+//  top
+// =======================
+
+.top{
+    background: url(../img/first.png) no-repeat center center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        background: #000;
+        opacity: .2;
+    }
+
+}
+
+.top__title-wrapper{
+    width: 317px;
+    margin-bottom: 2.875em;
+}
+
+.top__desc{
+    font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+    font-size: 1.375em;
+    text-align: center;
+    color: $primary-color;
+    letter-spacing: 0.04em;
 }
