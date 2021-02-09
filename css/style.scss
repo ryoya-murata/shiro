@@ -54,7 +54,7 @@ $breakpoints: (
 
 
 .section{
-    padding: 3.75em 0;
+    padding-top: 6.25em;
 
     @include mq('sp'){
         padding: 3em 0;
@@ -69,26 +69,27 @@ $breakpoints: (
 
 }
 
-.section__inner{
-    box-sizing: content-box;
-    padding: 0 2.5em;
-    margin: 0 auto;
-    max-width: $inner-width;
 
-    @include mq("sp"){
-        padding: 0 1.875em;
-    }
-}
 
 
 
 .section__title{
     font-size: 2.5em;
-    margin-bottom: 1.75em;
+    margin-bottom: 1.25em;
     font-weight: bold;
+    text-align: center;
+    position: relative;
 
-
-   
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: -13px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 34px;
+        height:1px;
+        background: #2b2b2b;
+    }
 
     @include mq('sp'){
         font-size: 1.875em;
@@ -98,18 +99,17 @@ $breakpoints: (
 }
 
 
-
-.section__title--left{
-    text-align: left;
-}
-
-.section__title--center{
+.section__desc{
+    font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
     text-align: center;
+    line-height: 1.968;
+    letter-spacing: 0.08em;
+    margin-bottom: 2.5em;
+    font-weight: 500;
 }
 
-.section__title--white{
-    color: #fff;
-}
+
+
 
 
 .button{
@@ -441,3 +441,23 @@ body.fixed{
     position: relative;
 }
 
+// =======================
+//  concept
+// =======================
+
+.concept__inner{
+    // box-sizing: content-box;
+    // padding: 0 2.5em;
+    // margin: 0 auto;
+}
+
+.concept__img-wrapper{
+    text-align: center;
+    padding-bottom: 5.875em;
+    background: linear-gradient(180deg,transparent 0%,transparent 45.6%,#ededed 45.6%,#ededed 100%);
+
+
+    .concept__img{
+        max-width: $inner-width;
+    }
+}
