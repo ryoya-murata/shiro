@@ -412,14 +412,15 @@ body.fixed{
     height: 100%;
     position: relative;
 
-    &::after{
-        content: "";
+
+    .top__overlay{
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
-        height: 100%;
         background: #000;
+        width: 100%;
+        height: 100%;
         opacity: .2;
     }
 
@@ -428,6 +429,7 @@ body.fixed{
 .top__title-wrapper{
     width: 317px;
     margin-bottom: 2.875em;
+    position: relative;
 }
 
 .top__desc{
@@ -436,4 +438,6 @@ body.fixed{
     text-align: center;
     color: $primary-color;
     letter-spacing: 0.04em;
+    position: relative;
 }
+

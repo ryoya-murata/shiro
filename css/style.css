@@ -393,20 +393,21 @@ body.fixed {
   position: relative;
 }
 
-.top::after {
-  content: "";
+.top .top__overlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 100%;
   background: #000;
+  width: 100%;
+  height: 100%;
   opacity: .2;
 }
 
 .top__title-wrapper {
   width: 317px;
   margin-bottom: 2.875em;
+  position: relative;
 }
 
 .top__desc {
@@ -415,5 +416,6 @@ body.fixed {
   text-align: center;
   color: #ffffff;
   letter-spacing: 0.04em;
+  position: relative;
 }
 /*# sourceMappingURL=style.css.map */
