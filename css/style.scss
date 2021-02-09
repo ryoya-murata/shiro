@@ -61,7 +61,7 @@ $breakpoints: (
     }
 }
 
-.inner{
+.section__inner{
     box-sizing: content-box;
     padding: 0 2.5em;
     margin: 0 auto;
@@ -461,3 +461,54 @@ body.fixed{
         max-width: $inner-width;
     }
 }
+
+
+// =======================
+//  florist
+// =======================
+
+.florist{
+    background: linear-gradient(0deg,transparent 0%,transparent 45.6%,#ededed 45.6%,#ededed 100%);
+}
+
+.florist__items{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.florist-items__item{
+    width: calc(100%/3 - 60px/2);
+    margin-right: 1.875em;
+
+    &:last-of-type{
+        margin-right: 0;
+    }
+}
+
+.florist-item__img-wrapper{
+    position: relative;
+    padding-top: 133.3333%;
+    overflow: hidden;
+    margin-bottom: 1.0938em;
+}
+
+.florist-item__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.florist-item__name{
+    font-size: 1.875em;
+    margin-bottom: 0.3333em;
+    letter-spacing: 0.02em;
+}
+
+.florist-item__desc{
+    line-height: 1.968;
+    letter-spacing: 0.08em;
+}
+
