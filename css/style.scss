@@ -119,73 +119,16 @@ $breakpoints: (
     display: inline-block;
     text-align: center;
     transition: all .3s;
-    font-weight: bold;
-}
-
-.button--large{
-    font-size: 1.25em;
-    line-height: 1.125;
     padding: 1em 4em;
-    letter-spacing: 4px;
-
-    @include mq('sp'){
-        font-size: 1.125em;
-    }
-}
-
-.button--small{
-    font-size: 1.125em;
-    line-height: 1.4;
-    padding: 0.75em 2.8em;
-    letter-spacing: 0.45px;
+    letter-spacing: 0.08em;
+    font-size: 1.25em;
 
     @include mq('sp'){
         font-size: 1em;
+        padding: .8em 2em;
     }
 }
 
-.button--bg_primary{
-    background: $primary-color;
-    color: #fff;
-    border: 1px solid #FFFFFF;
-    transition:  all .3s;
-
-    &:hover{
-        background: #fff;
-        color: $font-color;
-        border: 1px solid #707070;
-    }
-}
-
-
-
-.button--color_primary{
-    background: #fff;
-    color: $font-color;
-    border: 1px solid $primary-color;
-    transition:  all .3s;
-
-    &:hover{
-        color: #fff;
-        background: $primary-color;
-    }
-}
-
-.button--border_radius{
-    border-radius: 10px;
-}
-
-.button--left{
-    text-align: left;
-
-    @include mq('sp'){
-        text-align: center;
-    }
-}
-
-.button--center{
-    text-align: center;
-}
 
 .is-pc{
     @include mq('sp'){
@@ -686,4 +629,29 @@ body.fixed{
         flex: 1 1 75.3523%;
         font-size: 1.5em;
     }
+}
+
+// =======================
+//  contact
+// =======================
+
+.contact{
+    padding-bottom: 4.3125em;
+    background: url(../img/contact.png) no-repeat center / cover;
+}
+
+.contact__button-wrapper{
+    text-align: center;
+}
+
+.contact__button{
+    background: #fff;
+    border: 1px solid #000;
+
+}
+
+.contact-button__icon{
+    display: inline-block;
+    width: 30px;
+    vertical-align: middle;
 }
