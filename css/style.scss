@@ -624,3 +624,66 @@ body.fixed{
     letter-spacing: 0.08em;
 }
 
+
+// =======================
+//  shop information
+// =======================
+
+.shop{
+    padding-bottom: 11.25em;
+}
+
+.shop__contents{
+    display: flex;
+    align-items: center;
+
+    @include mq('sp'){
+        display: block;
+    }
+}
+
+.shop__img-wrapper{
+    flex: 0 0 52.0833%;
+    margin-right: 3.8542%;
+
+    @include mq('sp'){
+        margin-right: 0;
+        margin-bottom: 1.875em;
+    }
+}
+
+.shop__information-wrapper{
+    flex: 1 1 44.0625%;
+}
+
+.shop__information{
+    display: flex;
+    margin-bottom: 1.25em;
+
+    @include mq('sp'){
+        margin-bottom: 1.875em;
+    }
+}
+
+.shop-information__title{
+    flex: 0 0 22.6950%;
+    letter-spacing: 0.08em;
+    border-right: 2px solid #a0a0a0;
+    margin-right: 7.0922%;
+
+    @include mq('sp'){
+        flex: 0 0 120px;
+        margin-right: 4.3478%;
+        font-size: 1.5em;
+    }
+}
+
+.shop-information__desc{
+    flex: 1 1 auto;
+    font-family: sans-serif;
+
+    @include mq('sp'){
+        flex: 1 1 75.3523%;
+        font-size: 1.5em;
+    }
+}
