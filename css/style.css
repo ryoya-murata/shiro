@@ -86,78 +86,16 @@ img {
   text-align: center;
   -webkit-transition: all .3s;
   transition: all .3s;
-  font-weight: bold;
-}
-
-.button--large {
-  font-size: 1.25em;
-  line-height: 1.125;
   padding: 1em 4em;
-  letter-spacing: 4px;
+  letter-spacing: 0.08em;
+  font-size: 1.25em;
 }
 
 @media screen and (max-width: 767px) {
-  .button--large {
-    font-size: 1.125em;
-  }
-}
-
-.button--small {
-  font-size: 1.125em;
-  line-height: 1.4;
-  padding: 0.75em 2.8em;
-  letter-spacing: 0.45px;
-}
-
-@media screen and (max-width: 767px) {
-  .button--small {
+  .button {
     font-size: 1em;
+    padding: .8em 2em;
   }
-}
-
-.button--bg_primary {
-  background: #ffffff;
-  color: #fff;
-  border: 1px solid #FFFFFF;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-.button--bg_primary:hover {
-  background: #fff;
-  color: #000000;
-  border: 1px solid #707070;
-}
-
-.button--color_primary {
-  background: #fff;
-  color: #000000;
-  border: 1px solid #ffffff;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-.button--color_primary:hover {
-  color: #fff;
-  background: #ffffff;
-}
-
-.button--border_radius {
-  border-radius: 10px;
-}
-
-.button--left {
-  text-align: left;
-}
-
-@media screen and (max-width: 767px) {
-  .button--left {
-    text-align: center;
-  }
-}
-
-.button--center {
-  text-align: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -678,5 +616,25 @@ body.fixed {
             flex: 1 1 75.3523%;
     font-size: 1.5em;
   }
+}
+
+.contact {
+  padding-bottom: 4.3125em;
+  background: url(../img/contact.png) no-repeat center/cover;
+}
+
+.contact__button-wrapper {
+  text-align: center;
+}
+
+.contact__button {
+  background: #fff;
+  border: 1px solid #000;
+}
+
+.contact-button__icon {
+  display: inline-block;
+  width: 30px;
+  vertical-align: middle;
 }
 /*# sourceMappingURL=style.css.map */
