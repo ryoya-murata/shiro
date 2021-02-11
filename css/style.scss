@@ -67,6 +67,9 @@ $breakpoints: (
     margin: 0 auto;
     max-width: $inner-width;
 
+    @include mq('sp'){
+        padding: 0 1.875em;
+    }
 }
 
 
@@ -462,6 +465,113 @@ body.fixed{
     }
 }
 
+// =======================
+//  works
+// =======================
+
+.works{
+    padding-bottom: 8.4375em;
+
+    @include mq('sp'){
+        padding-bottom: 3em;
+    }
+}
+
+.works__items{
+    position: relative;
+    padding-top: 171%;
+
+    @include mq('sp'){
+        position: static;
+        padding-top: 0;
+    }
+}
+
+.works-items__item{
+    position: absolute;
+    width: 43.75%;
+
+    &:nth-of-type(odd){
+        left: 0;
+    }
+
+    &:nth-of-type(even){
+        left: 56.1458%;
+    }
+
+    &:nth-of-type(1){
+        top: 0;
+    }
+
+    &:nth-of-type(2){
+        top: 7.309%;
+    }
+
+    &:nth-of-type(3){
+        top: 43.4146%;
+    }
+
+    &:nth-of-type(4){
+        top: 63.4756%;
+    }
+
+    @include mq('sp'){
+        position: static;
+        width: 85.0725%;
+        margin-bottom: 5.125em;
+
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+
+        &:nth-of-type(odd){
+            margin-right: auto;
+        }
+
+        &:nth-of-type(even){
+            margin-left: auto;
+        }
+    }
+}
+
+.works-item__img-wrapper{
+    position: relative;
+    margin-bottom: .8em;
+}
+
+.works-item__img-wrapper--small{
+    padding-top: 100%;
+}
+
+.works-item__img-wrapper--large{
+    padding-top: 151.1905%;
+
+    @include mq('sp'){
+        padding-top: 136.7973%;
+    }
+}
+
+.works-item__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.works-item__title{
+    font-size: 1.875em;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.2em;
+
+    @include mq('sp'){
+        font-size: 1.5em;
+    }
+}
+
+.works-item__desc{
+    @include mq('sp'){
+        font-size: 0.875em;
+    }
+}
 
 // =======================
 //  florist
@@ -505,6 +615,8 @@ body.fixed{
     font-size: 1.875em;
     margin-bottom: 0.3333em;
     letter-spacing: 0.02em;
+
+
 }
 
 .florist-item__desc{

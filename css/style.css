@@ -38,6 +38,12 @@ img {
   max-width: 960px;
 }
 
+@media screen and (max-width: 767px) {
+  .section__inner {
+    padding: 0 1.875em;
+  }
+}
+
 .section__title {
   font-size: 2.5em;
   margin-bottom: 1.25em;
@@ -425,6 +431,117 @@ body.fixed {
 
 .concept__img-wrapper .concept__img {
   max-width: 960px;
+}
+
+.works {
+  padding-bottom: 8.4375em;
+}
+
+@media screen and (max-width: 767px) {
+  .works {
+    padding-bottom: 3em;
+  }
+}
+
+.works__items {
+  position: relative;
+  padding-top: 171%;
+}
+
+@media screen and (max-width: 767px) {
+  .works__items {
+    position: static;
+    padding-top: 0;
+  }
+}
+
+.works-items__item {
+  position: absolute;
+  width: 43.75%;
+}
+
+.works-items__item:nth-of-type(odd) {
+  left: 0;
+}
+
+.works-items__item:nth-of-type(even) {
+  left: 56.1458%;
+}
+
+.works-items__item:nth-of-type(1) {
+  top: 0;
+}
+
+.works-items__item:nth-of-type(2) {
+  top: 7.309%;
+}
+
+.works-items__item:nth-of-type(3) {
+  top: 43.4146%;
+}
+
+.works-items__item:nth-of-type(4) {
+  top: 63.4756%;
+}
+
+@media screen and (max-width: 767px) {
+  .works-items__item {
+    position: static;
+    width: 85.0725%;
+    margin-bottom: 5.125em;
+  }
+  .works-items__item:last-of-type {
+    margin-bottom: 0;
+  }
+  .works-items__item:nth-of-type(odd) {
+    margin-right: auto;
+  }
+  .works-items__item:nth-of-type(even) {
+    margin-left: auto;
+  }
+}
+
+.works-item__img-wrapper {
+  position: relative;
+  margin-bottom: .8em;
+}
+
+.works-item__img-wrapper--small {
+  padding-top: 100%;
+}
+
+.works-item__img-wrapper--large {
+  padding-top: 151.1905%;
+}
+
+@media screen and (max-width: 767px) {
+  .works-item__img-wrapper--large {
+    padding-top: 136.7973%;
+  }
+}
+
+.works-item__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.works-item__title {
+  font-size: 1.875em;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.2em;
+}
+
+@media screen and (max-width: 767px) {
+  .works-item__title {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .works-item__desc {
+    font-size: 0.875em;
+  }
 }
 
 .florist {
