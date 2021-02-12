@@ -747,6 +747,10 @@ body.fixed{
 }
 
 .copyright{
-    font-size: 1em;
+    font-size: 0.875em;
     font-weight: normal;
+
+    @include mq('sp'){
+        font-size: 0.625em;
+    }
 }

@@ -768,7 +768,13 @@ body.fixed {
 }
 
 .copyright {
-  font-size: 1em;
+  font-size: 0.875em;
   font-weight: normal;
+}
+
+@media screen and (max-width: 767px) {
+  .copyright {
+    font-size: 0.625em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
