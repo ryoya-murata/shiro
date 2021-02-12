@@ -632,7 +632,7 @@ body.fixed {
 
 @media screen and (max-width: 767px) {
   .florist-item__name {
-    font-size: 1.5em;
+    font-size: 1.25em;
     margin-bottom: 0.2em;
   }
 }
@@ -644,7 +644,7 @@ body.fixed {
 
 @media screen and (max-width: 767px) {
   .florist-item__desc {
-    font-size: 1em;
+    font-size: 0.875em;
   }
 }
 
