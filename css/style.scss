@@ -270,16 +270,18 @@ $layer: (
 	position: fixed;
 	top: 0;
 	right: 0;
-	z-index: map-get($layer, drawer);
-	transform: translateX(100%);
+	z-index: -1;
 	transition: all 0.5s;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+    opacity: 0;
 }
 
 .hamberger-menu.open {
-	transform: translateX(0);
+    opacity: 1;
+	z-index: map-get($layer, drawer);
+
 }
 
 .hamberger-menu__item {
