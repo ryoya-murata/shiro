@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins',  'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','小塚ゴシック Pro','Kozuka Gothic Pro','メイリオ', Meiryo,sans-serif;
+  font-family: "Poppins", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", YuGothic, "Yu Gothic", "メイリオ", Meiryo, sans-serif;
   color: #000000;
   width: 100%;
   height: 100%;
@@ -66,26 +66,29 @@ img {
 
 @media screen and (max-width: 767px) {
   .section__title {
-    font-size: 1.875em;
-    line-height: 1.3333;
+    font-size: 1.5em;
     margin-bottom: 1.2em;
   }
 }
 
 .section__desc {
-  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
   text-align: center;
   line-height: 1.968;
   letter-spacing: 0.08em;
   margin-bottom: 2.5em;
-  font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  .section__desc {
+    font-size: 0.875em;
+  }
 }
 
 .button {
   display: inline-block;
   text-align: center;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   padding: 1em 4em;
   letter-spacing: 0.08em;
   font-size: 1.25em;
@@ -94,7 +97,7 @@ img {
 @media screen and (max-width: 767px) {
   .button {
     font-size: 1em;
-    padding: .8em 2em;
+    padding: 0.8em 2em;
   }
 }
 
@@ -112,8 +115,8 @@ img {
 
 .op-0 {
   opacity: 0;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .op-1 {
@@ -138,12 +141,14 @@ img {
 }
 
 .header__inner {
+  max-width: 960px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0 2.5em;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -152,20 +157,10 @@ img {
           align-items: center;
 }
 
-.header__link {
-  display: block;
-  font-size: 1em;
-  line-height: 1.1875;
-  letter-spacing: -0.4px;
-  font-weight: bold;
-  border: 1px solid transparent;
-  padding-bottom: 0.8px;
-  -webkit-transition: all ease .3s;
-  transition: all ease .3s;
-}
-
-.header__link:hover {
-  border-bottom: 1px solid #3E3E3E;
+@media screen and (max-width: 767px) {
+  .header__inner {
+    padding: 0 1.875em;
+  }
 }
 
 .header__logo-wrapper {
@@ -197,10 +192,10 @@ img {
   cursor: pointer;
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .hamberger__line {
@@ -212,8 +207,8 @@ img {
   width: 100%;
   height: 1px;
   background-color: #ffffff;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .hamberger__line:nth-of-type(1) {
@@ -245,15 +240,15 @@ img {
 .hamberger-menu {
   width: 100%;
   height: 100vh;
-  background-color: #9e8b8b;
+  background-color: #82d8b0;
   position: fixed;
   top: 0;
   right: 0;
   z-index: 40;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,11 +293,18 @@ img {
   display: block;
   color: #fff;
   text-decoration: none;
-  padding: .6em 0;
+  padding: 0.6em 0;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 767px) {
+  .hamberger-menu__link {
+    font-size: 1em;
+  }
 }
 
 .overlay {
-  background: #000000CC;
+  background: #000000cc;
   position: fixed;
   right: 0;
   top: 0;
@@ -330,8 +332,14 @@ body.fixed {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
+  height: 100vh;
   position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .top {
+    height: 70vh;
+  }
 }
 
 .top .top__overlay {
@@ -342,22 +350,45 @@ body.fixed {
   background: #000;
   width: 100%;
   height: 100%;
-  opacity: .2;
+  opacity: 0.2;
+}
+
+.top__contents {
+  width: 317px;
+}
+
+@media screen and (max-width: 767px) {
+  .top__contents {
+    width: 100%;
+  }
 }
 
 .top__title-wrapper {
-  width: 317px;
   margin-bottom: 2.875em;
   position: relative;
 }
 
+@media screen and (max-width: 767px) {
+  .top__title-wrapper {
+    width: 60%;
+    max-width: 317px;
+    margin: 0 auto 2em;
+  }
+}
+
 .top__desc {
-  font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "小塚ゴシック Pro", "Kozuka Gothic Pro", sans-serif;
   font-size: 1.375em;
   text-align: center;
   color: #ffffff;
   letter-spacing: 0.04em;
   position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .top__desc {
+    font-size: 1.125em;
+  }
 }
 
 .concept__img-wrapper {
@@ -367,8 +398,37 @@ body.fixed {
   background: linear-gradient(180deg, transparent 0%, transparent 45.6%, #ededed 45.6%, #ededed 100%);
 }
 
+@media screen and (max-width: 767px) {
+  .concept__img-wrapper {
+    padding-bottom: 2em;
+  }
+}
+
 .concept__img-wrapper .concept__img {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   max-width: 960px;
+  width: calc(100% - 5em);
+  padding: 0 2.5em;
+}
+
+@media screen and (max-width: 767px) {
+  .concept__img-wrapper .concept__img {
+    width: calc(100% - 3.75em);
+    display: block;
+    padding: 0 1.875em;
+  }
+}
+
+.concept__desc {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+@media screen and (max-width: 767px) {
+  .concept__desc {
+    padding: 0 1.875em;
+  }
 }
 
 .works {
@@ -441,7 +501,7 @@ body.fixed {
 
 .works-item__img-wrapper {
   position: relative;
-  margin-bottom: .8em;
+  margin-bottom: 0.8em;
 }
 
 .works-item__img-wrapper--small {
@@ -472,7 +532,7 @@ body.fixed {
 
 @media screen and (max-width: 767px) {
   .works-item__title {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 }
 
@@ -487,6 +547,13 @@ body.fixed {
   background: linear-gradient(0deg, transparent 0%, transparent 45.6%, #ededed 45.6%, #ededed 100%);
 }
 
+@media screen and (max-width: 767px) {
+  .florist {
+    background: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(75.4%, transparent), color-stop(75.4%, #ededed), to(#ededed));
+    background: linear-gradient(0deg, transparent 0%, transparent 75.4%, #ededed 75.4%, #ededed 100%);
+  }
+}
+
 .florist__items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -495,8 +562,14 @@ body.fixed {
       flex-wrap: nowrap;
 }
 
+@media screen and (max-width: 767px) {
+  .florist__items {
+    display: block;
+  }
+}
+
 .florist-items__item {
-  width: calc(100%/3 - 60px/2);
+  width: calc(100% / 3 - 60px / 2);
   margin-right: 1.875em;
 }
 
@@ -504,11 +577,26 @@ body.fixed {
   margin-right: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .florist-items__item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1.875em;
+  }
+}
+
 .florist-item__img-wrapper {
   position: relative;
   padding-top: 133.3333%;
   overflow: hidden;
   margin-bottom: 1.0938em;
+}
+
+@media screen and (max-width: 767px) {
+  .florist-item__img-wrapper {
+    padding-top: 62.8986%;
+    margin-bottom: 0.8em;
+  }
 }
 
 .florist-item__img {
@@ -520,10 +608,24 @@ body.fixed {
   height: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  .florist-item__img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
 .florist-item__name {
   font-size: 1.875em;
   margin-bottom: 0.3333em;
   letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 767px) {
+  .florist-item__name {
+    font-size: 1.25em;
+    margin-bottom: 0.2em;
+  }
 }
 
 .florist-item__desc {
@@ -531,8 +633,20 @@ body.fixed {
   letter-spacing: 0.08em;
 }
 
+@media screen and (max-width: 767px) {
+  .florist-item__desc {
+    font-size: 0.875em;
+  }
+}
+
 .shop {
   padding-bottom: 11.25em;
+}
+
+@media screen and (max-width: 767px) {
+  .shop {
+    padding-bottom: 3em;
+  }
 }
 
 .shop__contents {
@@ -585,8 +699,8 @@ body.fixed {
 
 .shop-information__title {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 22.6950%;
-          flex: 0 0 22.6950%;
+      -ms-flex: 0 0 22.695%;
+          flex: 0 0 22.695%;
   letter-spacing: 0.08em;
   border-right: 2px solid #a0a0a0;
   margin-right: 7.0922%;
@@ -595,10 +709,10 @@ body.fixed {
 @media screen and (max-width: 767px) {
   .shop-information__title {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 120px;
-            flex: 0 0 120px;
+        -ms-flex: 0 1 120px;
+            flex: 0 1 120px;
     margin-right: 4.3478%;
-    font-size: 1.5em;
+    font-size: 1.125em;
   }
 }
 
@@ -614,17 +728,23 @@ body.fixed {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 75.3523%;
             flex: 1 1 75.3523%;
-    font-size: 1.5em;
+    font-size: 1.125em;
   }
 }
 
 .contact {
   padding-bottom: 4.3125em;
   background: url(../img/contact.png) no-repeat center/cover;
+  position: relative;
+}
+
+.contact__inner {
+  position: relative;
 }
 
 .contact__button-wrapper {
   text-align: center;
+  position: relative;
 }
 
 .contact__button {
@@ -638,6 +758,17 @@ body.fixed {
   vertical-align: middle;
 }
 
+.contact__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0.6;
+}
+
 .footer {
   background: #ffffff;
   padding: 2.25em 0;
@@ -645,7 +776,13 @@ body.fixed {
 }
 
 .copyright {
-  font-size: 1em;
+  font-size: 0.875em;
   font-weight: normal;
+}
+
+@media screen and (max-width: 767px) {
+  .copyright {
+    font-size: 0.625em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
