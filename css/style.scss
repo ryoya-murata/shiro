@@ -36,6 +36,7 @@ img{
 $inner-width: 960px;
 
 
+
 $breakpoints: (
   "sp": "screen and (max-width: 767px)",
   "pc": "screen and (min-width: 768px)"
@@ -419,20 +420,37 @@ body.fixed{
 //  concept
 // =======================
 
-.concept__inner{
-    // box-sizing: content-box;
-    // padding: 0 2.5em;
-    // margin: 0 auto;
-}
+
 
 .concept__img-wrapper{
     text-align: center;
     padding-bottom: 5.875em;
     background: linear-gradient(180deg,transparent 0%,transparent 45.6%,#ededed 45.6%,#ededed 100%);
 
+    @include mq('sp'){
+        padding-bottom: 2em;
+    }
+
 
     .concept__img{
+        box-sizing: content-box;
         max-width: $inner-width;
+        width: calc( 100% - 5em);
+        padding: 0 2.5em;
+
+        @include mq('sp'){
+            width: calc(100% - 3.75em);
+            display: block;
+            padding: 0 1.875em;
+        }
+    }
+}
+
+.concept__desc{
+    box-sizing: content-box;
+
+    @include mq('sp'){
+        padding: 0 1.875em;
     }
 }
 
