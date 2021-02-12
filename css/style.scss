@@ -650,6 +650,10 @@ body.fixed{
 
 .shop{
     padding-bottom: 11.25em;
+
+    @include mq('sp'){
+        padding-bottom: 3em;
+    }
 }
 
 .shop__contents{
@@ -691,9 +695,9 @@ body.fixed{
     margin-right: 7.0922%;
 
     @include mq('sp'){
-        flex: 0 0 120px;
+        flex: 0 1 120px;
         margin-right: 4.3478%;
-        font-size: 1.5em;
+        font-size: 1.125em;
     }
 }
 
@@ -703,7 +707,7 @@ body.fixed{
 
     @include mq('sp'){
         flex: 1 1 75.3523%;
-        font-size: 1.5em;
+        font-size: 1.125em;
     }
 }
 
