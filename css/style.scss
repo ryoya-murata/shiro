@@ -387,14 +387,19 @@ body.fixed{
     width: 317px;
 
     @include mq('sp'){
-        width: 50%;
-        max-width: 317px;
+        width: 100%;
     }
 }
 
 .top__title-wrapper{
     margin-bottom: 2.875em;
     position: relative;
+
+    @include mq('sp'){
+        width: 60%;
+        max-width: 317px;
+        margin: 0 auto 2em;
+    }
 }
 
 .top__desc{

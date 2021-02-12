@@ -368,14 +368,21 @@ body.fixed {
 
 @media screen and (max-width: 767px) {
   .top__contents {
-    width: 50%;
-    max-width: 317px;
+    width: 100%;
   }
 }
 
 .top__title-wrapper {
   margin-bottom: 2.875em;
   position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .top__title-wrapper {
+    width: 60%;
+    max-width: 317px;
+    margin: 0 auto 2em;
+  }
 }
 
 .top__desc {
