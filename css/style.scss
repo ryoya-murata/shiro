@@ -137,6 +137,21 @@ $breakpoints: (
 	opacity: 1;
 }
 
+.js-hide{
+    opacity: 0;
+    transform: translateY(5em);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -ms-transition: all 1s;
+    transition: all 1s;
+}
+
+.js-show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 // =======================
 //  z-index
 // =======================
