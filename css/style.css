@@ -138,6 +138,7 @@ img {
 }
 
 .header__inner {
+  max-width: 960px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   margin: 0 auto;

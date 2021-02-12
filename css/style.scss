@@ -191,6 +191,7 @@ $layer: (
 }
 
 .header__inner{
+    max-width: $inner-width;
     box-sizing: content-box;
     margin: 0 auto;
     display: flex;
