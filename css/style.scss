@@ -207,20 +207,7 @@ $layer: (
 }
 
 
-.header__link{
-    display: block;
-    font-size: 1em;
-    line-height: 1.1875;
-    letter-spacing: -0.4px;
-    font-weight: bold;
-    border: 1px solid transparent;
-    padding-bottom: 0.8px;
-    transition: all ease .3s;
 
-    &:hover{
-        border-bottom: 1px solid #3E3E3E;
-    }
-}
 
 .header__logo-wrapper{
     width: 89px;
@@ -294,7 +281,7 @@ $layer: (
 .hamberger-menu{
     width: 100%;
     height: 100vh;
-    background-color: #9e8b8b;
+    background-color: #82d8b0;
     position: fixed;
     top: 0;
     right: 0;
@@ -330,6 +317,11 @@ $layer: (
     color: #fff;
     text-decoration: none;
     padding: .6em 0;
+    font-size: 1.5em;
+
+    @include mq('sp'){
+        font-size: 1em;
+    }
 }
 
 .overlay{
