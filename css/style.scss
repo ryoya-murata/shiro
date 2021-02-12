@@ -356,8 +356,12 @@ body.fixed{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 100vh;
     position: relative;
+
+    @include mq('sp'){
+        height: 70vh;
+    }
 
 
     .top__overlay{
@@ -373,8 +377,16 @@ body.fixed{
 
 }
 
-.top__title-wrapper{
+.top__contents{
     width: 317px;
+
+    @include mq('sp'){
+        width: 50%;
+        max-width: 317px;
+    }
+}
+
+.top__title-wrapper{
     margin-bottom: 2.875em;
     position: relative;
 }
@@ -386,6 +398,10 @@ body.fixed{
     color: $primary-color;
     letter-spacing: 0.04em;
     position: relative;
+
+    @include mq('sp'){
+        font-size: 1.125em;
+    }
 }
 
 // =======================

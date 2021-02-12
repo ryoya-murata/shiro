@@ -331,8 +331,14 @@ body.fixed {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
+  height: 100vh;
   position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .top {
+    height: 70vh;
+  }
 }
 
 .top .top__overlay {
@@ -346,8 +352,18 @@ body.fixed {
   opacity: .2;
 }
 
-.top__title-wrapper {
+.top__contents {
   width: 317px;
+}
+
+@media screen and (max-width: 767px) {
+  .top__contents {
+    width: 50%;
+    max-width: 317px;
+  }
+}
+
+.top__title-wrapper {
   margin-bottom: 2.875em;
   position: relative;
 }
@@ -359,6 +375,12 @@ body.fixed {
   color: #ffffff;
   letter-spacing: 0.04em;
   position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .top__desc {
+    font-size: 1.125em;
+  }
 }
 
 .concept__img-wrapper {
