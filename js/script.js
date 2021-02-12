@@ -29,3 +29,19 @@ $(function(){
         });
     });
     
+
+    $(function(){
+        $(window).scroll(function (){
+          $(".js-hide").each(function(){//.js-hideクラスに実行
+            var position = $(this).offset().top;//.js-hideの表示位置を取得
+            var scroll = $(window).scrollTop();//現在のスクロール位置を取得
+            var windowHeight = $(window).height();
+            if (scroll > position - windowHeight/2){
+                $(this).addClass('js-show');
+            } 
+          });
+        });
+      });
+
+     
+      
