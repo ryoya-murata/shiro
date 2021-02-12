@@ -287,10 +287,15 @@ $layer: (
 	text-decoration: none;
 	padding: 0.6em 0;
 	font-size: 1.5em;
+    transition: all 0.3s;
 
 	@include mq("sp") {
 		font-size: 1em;
 	}
+
+    &:hover{
+        opacity: .7;
+    }
 }
 
 .overlay {
