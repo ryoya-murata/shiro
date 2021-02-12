@@ -684,6 +684,10 @@ body.fixed {
 .contact__button {
 	background: #fff;
 	border: 1px solid #000;
+
+    &:hover{
+        opacity: .6;
+    }
 }
 
 .contact-button__icon {

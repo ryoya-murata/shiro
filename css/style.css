@@ -752,6 +752,10 @@ body.fixed {
   border: 1px solid #000;
 }
 
+.contact__button:hover {
+  opacity: .6;
+}
+
 .contact-button__icon {
   display: inline-block;
   width: 30px;
