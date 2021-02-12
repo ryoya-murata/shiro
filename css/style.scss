@@ -196,8 +196,13 @@ $layer: (
     box-sizing: content-box;
     margin: 0 auto;
     display: flex;
+    padding: 0 2.5em;
     justify-content: space-between;
     align-items: center;
+
+    @include mq('sp'){
+        padding: 0 1.875em;
+    }
 }
 
 
