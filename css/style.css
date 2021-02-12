@@ -510,12 +510,25 @@ body.fixed {
   background: linear-gradient(0deg, transparent 0%, transparent 45.6%, #ededed 45.6%, #ededed 100%);
 }
 
+@media screen and (max-width: 767px) {
+  .florist {
+    background: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(75.4%, transparent), color-stop(75.4%, #ededed), to(#ededed));
+    background: linear-gradient(0deg, transparent 0%, transparent 75.4%, #ededed 75.4%, #ededed 100%);
+  }
+}
+
 .florist__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 767px) {
+  .florist__items {
+    display: block;
+  }
 }
 
 .florist-items__item {
@@ -527,11 +540,26 @@ body.fixed {
   margin-right: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .florist-items__item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1.875em;
+  }
+}
+
 .florist-item__img-wrapper {
   position: relative;
   padding-top: 133.3333%;
   overflow: hidden;
   margin-bottom: 1.0938em;
+}
+
+@media screen and (max-width: 767px) {
+  .florist-item__img-wrapper {
+    padding-top: 62.8986%;
+    margin-bottom: 0.8em;
+  }
 }
 
 .florist-item__img {
@@ -543,15 +571,35 @@ body.fixed {
   height: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  .florist-item__img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
 .florist-item__name {
   font-size: 1.875em;
   margin-bottom: 0.3333em;
   letter-spacing: 0.02em;
 }
 
+@media screen and (max-width: 767px) {
+  .florist-item__name {
+    font-size: 1.5em;
+    margin-bottom: 0.2em;
+  }
+}
+
 .florist-item__desc {
   line-height: 1.968;
   letter-spacing: 0.08em;
+}
+
+@media screen and (max-width: 767px) {
+  .florist-item__desc {
+    font-size: 1em;
+  }
 }
 
 .shop {

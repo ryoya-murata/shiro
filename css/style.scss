@@ -539,11 +539,19 @@ body.fixed{
 
 .florist{
     background: linear-gradient(0deg,transparent 0%,transparent 45.6%,#ededed 45.6%,#ededed 100%);
+
+    @include mq('sp'){
+        background: linear-gradient(0deg,transparent 0%,transparent 75.4%,#ededed 75.4%,#ededed 100%);
+    }
 }
 
 .florist__items{
     display: flex;
     flex-wrap: nowrap;
+
+    @include mq('sp'){
+        display: block;
+    }
 }
 
 .florist-items__item{
@@ -553,6 +561,12 @@ body.fixed{
     &:last-of-type{
         margin-right: 0;
     }
+
+    @include mq('sp'){
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1.875em;
+    }
 }
 
 .florist-item__img-wrapper{
@@ -560,6 +574,11 @@ body.fixed{
     padding-top: 133.3333%;
     overflow: hidden;
     margin-bottom: 1.0938em;
+
+    @include mq('sp'){
+        padding-top: 62.8986%;
+        margin-bottom: 0.8em;
+    }
 }
 
 .florist-item__img{
@@ -569,6 +588,10 @@ body.fixed{
     right: 0;
     width: 100%;
     height: 100%;
+
+    @include mq('sp'){
+        object-fit: cover;
+    }
 }
 
 .florist-item__name{
@@ -576,12 +599,19 @@ body.fixed{
     margin-bottom: 0.3333em;
     letter-spacing: 0.02em;
 
-
+    @include mq('sp'){
+        font-size: 1.5em;
+        margin-bottom: 0.2em;
+    }
 }
 
 .florist-item__desc{
     line-height: 1.968;
     letter-spacing: 0.08em;
+
+    @include mq('sp'){
+        font-size: 1em;
+    }
 }
 
 
