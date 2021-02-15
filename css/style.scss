@@ -145,6 +145,10 @@ $breakpoints: (
 	-o-transition: all 1s;
 	-ms-transition: all 1s;
 	transition: all 1s;
+
+	@include mq('sp'){
+		transform: translateY(2.5em);
+	}
 }
 
 
