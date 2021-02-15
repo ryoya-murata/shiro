@@ -131,6 +131,13 @@ img {
   transition: all 1s;
 }
 
+@media screen and (max-width: 767px) {
+  .js-hide {
+    -webkit-transform: translateY(2.5em);
+            transform: translateY(2.5em);
+  }
+}
+
 .js-show {
   opacity: 1;
   -webkit-transform: translateY(0);
